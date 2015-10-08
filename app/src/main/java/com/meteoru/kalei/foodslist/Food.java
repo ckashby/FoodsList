@@ -1,84 +1,86 @@
 package com.meteoru.kalei.foodslist;
 
+import android.util.Log;
+
 public class Food {
-    public String objectId;
-    public String name;
-    public String description;
-    public String category;
-    public String friendly;
-    public String tryit;
-    public String caution;
+    private String mObjectId;
+    private String mName;
+    private String mDescription;
+    private String mCategory;
+    private String mFriendly;
+    private String mTryIt;
+    private String mCaution;
 
     public Food(String objectId, String name, String description, String category, String friendly, String tryit, String caution) {
-        this.objectId = objectId;
-        this.name = name;
-        this.description = description;
-        this.category = category;
-        this.friendly = friendly;
-        this.tryit = tryit;
-        this.caution = caution;
+        this.mObjectId = objectId;
+        this.mName = name;
+        this.mDescription = description;
+        this.mCategory = category;
+        this.mFriendly = friendly;
+        this.mTryIt = tryit;
+        this.mCaution = caution;
+
+        Log.d("Food", "Creating food with " + category + " category");
     }
 
     @Override
     public String toString() {
-        return category;
-
-//        return super.toString();
+        return mCategory;
     }
 
     public String getObjectId() {
-        return objectId;
+        return mObjectId;
     }
 
     public void setObjectId(String objectId) {
-        this.objectId = objectId;
+        this.mObjectId = objectId;
     }
 
     public String getName() {
-        return name;
+        return mName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.mName = name;
     }
 
     public String getDescription() {
-        return description;
+        return mDescription;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.mDescription = description;
     }
 
     public String getCategory() {
-        return category;
+        return mCategory;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setmCategory(String mCategory) {
+        this.mCategory = mCategory;
     }
 
     public String getFriendly() {
-        return friendly;
+        return mFriendly;
     }
 
     public void setFriendly(String friendly) {
-        this.friendly = friendly;
+        this.mFriendly = friendly;
     }
 
     public String getTryit() {
-        return tryit;
+        return mTryIt;
     }
 
     public void setTryit(String tryit) {
-        this.tryit = tryit;
+        this.mTryIt = tryit;
     }
 
     public String getCaution() {
-        return caution;
+        return mCaution;
     }
 
     public void setCaution(String caution) {
-        this.caution = caution;
+        this.mCaution = caution;
     }
 }

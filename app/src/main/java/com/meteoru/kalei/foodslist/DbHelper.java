@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import com.parse.ParseObject;
 
@@ -61,14 +62,28 @@ public class DbHelper extends SQLiteOpenHelper{
         Cursor cursor = db.query("food", new String[] {"objectId", "name", "description", "category", "friendly", "try", "caution"}, null, null, null, null, null );
         if (cursor.moveToFirst()) {
             do {
-                String objectId = cursor.getString(0);
-                String name = cursor.getString(1);
-                String description = cursor.getString(2);
-                String category = cursor.getString(3);
-                String friendly = cursor.getString(4);
-                String tryit = cursor.getString(5);
-                String caution = cursor.getString(6);
-                allFoods.add(new Food(objectId, name, category, description, friendly, tryit, caution));
+                int objectIdIdx = cursor.getColumnIndex("objectId");
+                String objectId = cursor.getString(objectIdIdx);
+
+                int nameIdx = cursor.getColumnIndex("name");
+                String name = cursor.getString(nameIdx);
+
+                int descIdx = cursor.getColumnIndex("description");
+                String description = cursor.getString(descIdx);
+
+                int categoryIdx = cursor.getColumnIndex("category");
+                String category = cursor.getString(categoryIdx);
+
+                int friendlyIdx = cursor.getColumnIndex("friendly");
+                String friendly = cursor.getString(friendlyIdx);
+
+                int tryIdx = cursor.getColumnIndex("try");
+                String tryit = cursor.getString(tryIdx);
+
+                int cautionIdx = cursor.getColumnIndex("caution");
+                String caution = cursor.getString(cautionIdx);
+                Log.d("DbHelper", name + " with category " + category);
+                allFoods.add(new Food(objectId, name, description, category, friendly, tryit, caution));
 
             } while (cursor.moveToNext());
         }
