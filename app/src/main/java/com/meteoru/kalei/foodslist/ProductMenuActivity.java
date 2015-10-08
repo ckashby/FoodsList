@@ -1,5 +1,6 @@
 package com.meteoru.kalei.foodslist;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -12,6 +13,7 @@ import java.util.List;
 
 public class ProductMenuActivity extends AppCompatActivity {
     public static String CATEGORY_EXTRA = "category_extra";
+    public static String ITEM_EXTRA = "item_extra";
 
     List<Food> productList;
     ListView lvProducts;
@@ -36,7 +38,10 @@ public class ProductMenuActivity extends AppCompatActivity {
         lvProducts.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                Food food = productList.get(position);
+                Intent intent = new Intent(ProductMenuActivity.this, DetailsActivity.class);
+                intent.putExtra(ITEM_EXTRA, food);
+                startActivity(intent);
             }
         });
 

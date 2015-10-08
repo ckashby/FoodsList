@@ -14,6 +14,10 @@ public class DetailsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        Food food = getIntent().getParcelableExtra(ProductMenuActivity.ITEM_EXTRA);
+
+
+
 
     }
 

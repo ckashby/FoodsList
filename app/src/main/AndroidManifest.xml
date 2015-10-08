@@ -33,11 +33,11 @@
         <activity
             android:name=".DetailsActivity"
             android:label="@string/title_activity_details"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".ProductMenuActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.meteoru.kalei.foodslist.MainActivity" />
+                android:value="com.meteoru.kalei.foodslist.ProductMenuActivity" />
         </activity>
     </application>
 
