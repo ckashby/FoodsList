@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     ListView lvMainMenu;
     DbHelper dbHelper;
     SQLiteDatabase database;
-    List<Food> alData;
+    List<String> alData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         lvMainMenu = (ListView) findViewById(R.id.lvMainMenu);
         dbHelper = new DbHelper(this);
-        alData = dbHelper.getAllFood();
+        alData = dbHelper.getMainMenu();
         if (alData.size() == 0){
             queryParse();
         } else {
-            FoodAdapter aLvMainMenu = new FoodAdapter(
-                    MainActivity.this, alData);
+            ArrayAdapter aLvMainMenu = new ArrayAdapter(
+                    MainActivity.this, android.R.layout.simple_list_item_1, alData);
             lvMainMenu.setAdapter(aLvMainMenu);
 
         }
@@ -53,9 +54,9 @@ public class MainActivity extends AppCompatActivity {
                     for (int i = 0; i < list.size(); i++){
                         dbHelper.insertFood(list.get(i));
                     }
-                    alData = dbHelper.getAllFood();
-                    FoodAdapter aLvMainMenu = new FoodAdapter(
-                            MainActivity.this, alData);
+                    alData = dbHelper.getMainMenu();
+                    ArrayAdapter aLvMainMenu = new ArrayAdapter(
+                            MainActivity.this, android.R.layout.simple_list_item_1, alData);
                     lvMainMenu.setAdapter(aLvMainMenu);
                 }
             }

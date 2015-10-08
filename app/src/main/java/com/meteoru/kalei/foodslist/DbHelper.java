@@ -59,7 +59,7 @@ public class DbHelper extends SQLiteOpenHelper{
     public List<Food> getAllFood(){
         SQLiteDatabase db = this.getReadableDatabase();
         List<Food> allFoods = new ArrayList<Food>();
-        Cursor cursor = db.query("food", new String[] {"objectId", "name", "description", "category", "friendly", "try", "caution"}, null, null, null, null, null );
+        Cursor cursor = db.query("food", new String[]{"objectId", "name", "description", "category", "friendly", "try", "caution"}, null, null, null, null, null);
         if (cursor.moveToFirst()) {
             do {
                 int objectIdIdx = cursor.getColumnIndex("objectId");
@@ -90,6 +90,59 @@ public class DbHelper extends SQLiteOpenHelper{
         cursor.close();
         db.close();
         return allFoods;
+    }
+
+    public List<String> getMainMenu(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        List<String> allFoods = new ArrayList<String>();
+        Cursor cursor = db.query(true, "food", new String[]{ "category"}, null, null, null, null, null, null);
+        if (cursor.moveToFirst()) {
+            do {
+                int categoryIdx = cursor.getColumnIndex("category");
+                String category = cursor.getString(categoryIdx);
+                allFoods.add(category);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        db.close();
+        return allFoods;
+    }
+
+    public List<Food> getFoodsByCategory(String category_extra){
+        SQLiteDatabase db = this.getReadableDatabase();
+        List<Food> productMenu = new ArrayList<Food>();
+        Cursor cursor = db.query("food", new String[] {"objectId", "name", "description", "category", "friendly", "try", "caution"}, "WHERE category = ?", new String[] {category_extra}, null, null, null );
+        if (cursor.moveToFirst()) {
+            do {
+                int objectIdIdx = cursor.getColumnIndex("objectId");
+                String objectId = cursor.getString(objectIdIdx);
+
+                int nameIdx = cursor.getColumnIndex("name");
+                String name = cursor.getString(nameIdx);
+
+                int descIdx = cursor.getColumnIndex("description");
+                String description = cursor.getString(descIdx);
+
+                int categoryIdx = cursor.getColumnIndex("category");
+                String category = cursor.getString(categoryIdx);
+
+                int friendlyIdx = cursor.getColumnIndex("friendly");
+                String friendly = cursor.getString(friendlyIdx);
+
+                int tryIdx = cursor.getColumnIndex("try");
+                String tryit = cursor.getString(tryIdx);
+
+                int cautionIdx = cursor.getColumnIndex("caution");
+                String caution = cursor.getString(cautionIdx);
+                Log.d("DbHelper", name + " with category " + category);
+                productMenu.add(new Food(objectId, name, description, category, friendly, tryit, caution));
+
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        db.close();
+        return productMenu;
+
     }
 
 }
