@@ -26,8 +26,10 @@ public class ProductMenuActivity extends AppCompatActivity {
 
         lvProducts = (ListView) findViewById(R.id.productListView);
         String category = getIntent().getStringExtra(CATEGORY_EXTRA);
-
-
+        dbHelper = new DbHelper(this);
+        productList = dbHelper.getFoodsByCategory(category);
+        aLvProducts = new ArrayAdapter<Food>(
+                this, R.layout.food_item_layout, R.id.tvFoodListView, productList);
         lvProducts.setAdapter(aLvProducts);
 
     }

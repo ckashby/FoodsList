@@ -25,7 +25,7 @@ public class Food {
 
     @Override
     public String toString() {
-        return mCategory;
+        return mName;
     }
 
     public String getObjectId() {

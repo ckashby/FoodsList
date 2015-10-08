@@ -1,13 +1,14 @@
 package com.meteoru.kalei.foodslist;
 
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
@@ -23,7 +24,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     ListView lvMainMenu;
     DbHelper dbHelper;
-    SQLiteDatabase database;
     List<String> alData;
 
     @Override
@@ -31,13 +31,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         lvMainMenu = (ListView) findViewById(R.id.lvMainMenu);
+        lvMainMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(MainActivity.this, ProductMenuActivity.class);
+                intent.putExtra(ProductMenuActivity.CATEGORY_EXTRA, alData.get(position));
+                startActivity(intent);
+            }
+        });
         dbHelper = new DbHelper(this);
         alData = dbHelper.getMainMenu();
         if (alData.size() == 0){
             queryParse();
         } else {
             ArrayAdapter aLvMainMenu = new ArrayAdapter(
-                    MainActivity.this, android.R.layout.simple_list_item_1, alData);
+                    MainActivity.this, R.layout.food_item_layout, R.id.tvFoodListView, alData);
             lvMainMenu.setAdapter(aLvMainMenu);
 
         }
@@ -56,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     alData = dbHelper.getMainMenu();
                     ArrayAdapter aLvMainMenu = new ArrayAdapter(
-                            MainActivity.this, android.R.layout.simple_list_item_1, alData);
+                            MainActivity.this, R.layout.food_item_layout, R.id.tvFoodListView, alData);
                     lvMainMenu.setAdapter(aLvMainMenu);
                 }
             }
@@ -100,4 +108,6 @@ public class MainActivity extends AppCompatActivity {
             return convertView;
         }
     }
+
+
 }

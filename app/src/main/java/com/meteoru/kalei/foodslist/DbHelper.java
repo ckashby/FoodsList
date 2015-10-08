@@ -111,7 +111,7 @@ public class DbHelper extends SQLiteOpenHelper{
     public List<Food> getFoodsByCategory(String category_extra){
         SQLiteDatabase db = this.getReadableDatabase();
         List<Food> productMenu = new ArrayList<Food>();
-        Cursor cursor = db.query("food", new String[] {"objectId", "name", "description", "category", "friendly", "try", "caution"}, "WHERE category = ?", new String[] {category_extra}, null, null, null );
+        Cursor cursor = db.query("food", new String[] {"objectId", "name", "description", "category", "friendly", "try", "caution"}, " category = ?", new String[] {category_extra}, null, null, null );
         if (cursor.moveToFirst()) {
             do {
                 int objectIdIdx = cursor.getColumnIndex("objectId");
