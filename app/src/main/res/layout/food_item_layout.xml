@@ -6,8 +6,7 @@
     <TextView
         android:id="@+id/tvFoodListView"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:padding="2dp"
+        android:gravity="center_vertical"
         android:minHeight="?android:attr/listPreferredItemHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
