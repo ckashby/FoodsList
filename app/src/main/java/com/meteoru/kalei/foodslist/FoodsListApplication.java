@@ -11,7 +11,7 @@ public class FoodsListApplication extends Application{
         // Enable Local Datastore.
         Parse.enableLocalDatastore(this);
 
-        Parse.initialize(this, "jVzr7SonnzcbcFQa7jVbCx1mgqDa6G46HXSw7Qsi", "JSv0KV9ya59AyIbsdjcUzmMjfoYGyvdi7w148T7N");
+        Parse.initialize(this, "yaKGnpPhnNzU0yw4gqStXRAJTGkD4VCwGgoqdQjx", "z5GYmUxBiWFb93YfWKDYQuza0xQ4MvlPxOWRNfoG");
 
     }
 }
