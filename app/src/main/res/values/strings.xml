@@ -2,4 +2,8 @@
     <string name="app_name">FoodsList</string>
     <string name="title_activity_product_menu">ProductMenuActivity</string>
     <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_friendly">Friendly</string>
+    <string name="title_tryit">Try It!</string>
+    <string name="title_caution">Caution!</string>
+
 </resources>

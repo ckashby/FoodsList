@@ -2,6 +2,7 @@ package com.meteoru.kalei.foodslist;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -14,11 +15,18 @@ import java.util.List;
 public class ProductMenuActivity extends AppCompatActivity {
     public static String CATEGORY_EXTRA = "category_extra";
     public static String ITEM_EXTRA = "item_extra";
+    private String category;
 
     List<Food> productList;
     ListView lvProducts;
     ArrayAdapter<Food> aLvProducts;
     DbHelper dbHelper;
+
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        outState.putString(CATEGORY_EXTRA, category);
+        super.onSaveInstanceState(outState, outPersistentState);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +37,14 @@ public class ProductMenuActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         lvProducts = (ListView) findViewById(R.id.productListView);
-        String category = getIntent().getStringExtra(CATEGORY_EXTRA);
+        if (savedInstanceState == null) {
+            category = getIntent().getStringExtra(CATEGORY_EXTRA);
+        } else {
+            category = savedInstanceState.getString(CATEGORY_EXTRA);
+        }
         dbHelper = new DbHelper(this);
         productList = dbHelper.getFoodsByCategory(category);
+
         aLvProducts = new ArrayAdapter<Food>(
                 this, R.layout.food_item_layout, R.id.tvFoodListView, productList);
         lvProducts.setAdapter(aLvProducts);
