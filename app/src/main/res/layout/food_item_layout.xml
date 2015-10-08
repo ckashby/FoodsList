@@ -5,7 +5,11 @@
 
     <TextView
         android:id="@+id/text"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:padding="8dp"
         android:minHeight="?android:attr/listPreferredItemHeight"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Dairy, Eggs and Cheese"/>
 </LinearLayout>
