@@ -5,6 +5,19 @@
     <string name="title_friendly">Friendly</string>
     <string name="title_tryit">Try It!</string>
     <string name="title_caution">Caution!</string>
-    <string name="title_activity_about_icn">AboutIcnActivity</string>
 
+    <string name="title_activity_about_icn">About IC-Network.com</string>
+    <string name="about_icn_intro">The Interstitial Cystitis Network is a woman owned, "social advocacy" health education company dedicated to interstitial cystitis and other pelvic pain disorders. Using the internet, we create innovative solutions to the pressing problems facing patients diagnosed with urologic conditions, medical care providers who care for them and the research community seeking new treatments and cures. For the past 16 years, we have provided critical 24/7 support to patients in need, developed new educational materials, conducted vital research, provided webinars / lectures and created IC awareness campaigns, all at NO COST to the patients who visit our website</string>
+    <string name="about_icn_html">
+        <![CDATA[
+        <p>Learn more about IC! - <a href="http://www.ic-network.com">http://www.ic-network.com</a></p>
+        <p>Watch the Living With IC Video Series - <a href="http://www.ic-network.com">http://www.ic-network.com/videos/</a></p>
+        <p>Meet other patients and join our live support chats! - <a href="http://www.ic-network.com/support/">http://www.ic-network.com/support/</a></p>
+        <p>Sign up for our free e-newsletter! - <a href="http://www.ic-network.com/newsletters/">http://www.ic-network.com/newsletters/</a></p>
+        <p>Subscribe to the IC Optimist Magazine! - <a href="http://www.ic-network.com/subscriptions/">http://www.ic-network.com/subscriptions/</a></p>
+        <p>Learn more about products that can help you, today, manage your symptoms! - <a href="http://www.icnsales.com">http://www.icnsales.com</a></p>
+        <p>Find us on Facebook. - <a href="https://www.facebook.com/pages/Interstitial-Cystitis-Network/396285769568?ref=ts">https://www.facebook.com/pages/Interstitial-Cystitis-Network/396285769568?ref=ts</a></p>
+        <p>Tweet us at Twitter - <a href="http://www.twitter.com/icnjill/">http://www.twitter.com/icnjill/</a></p>
+        ]]>
+    </string>
 </resources>

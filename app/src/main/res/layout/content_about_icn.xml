@@ -10,6 +10,18 @@
     tools:showIn="@layout/activity_about_icn"
     tools:context="com.meteoru.kalei.foodslist.AboutIcnActivity">
 
+    <TextView
+        android:id="@+id/tvAboutIcn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_icn_intro"/>
+
+
+        <WebView
+            android:id="@+id/wvAboutIcn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAboutIcn"></WebView>
 
 
 </RelativeLayout>
