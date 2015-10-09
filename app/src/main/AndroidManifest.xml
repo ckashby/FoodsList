@@ -40,6 +40,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.meteoru.kalei.foodslist.ProductMenuActivity" />
         </activity>
+        <activity
+            android:name=".AboutIcnActivity"
+            android:label="@string/title_activity_about_icn"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.meteoru.kalei.foodslist.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -5,5 +5,6 @@
     <string name="title_friendly">Friendly</string>
     <string name="title_tryit">Try It!</string>
     <string name="title_caution">Caution!</string>
+    <string name="title_activity_about_icn">AboutIcnActivity</string>
 
 </resources>
