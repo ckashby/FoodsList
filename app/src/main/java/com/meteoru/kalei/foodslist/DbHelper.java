@@ -21,6 +21,11 @@ public class DbHelper extends SQLiteOpenHelper{
     public static final String COL_NAME = "name";
     public static final String COL_DESCRIPTION = "description";
     public static final String COL_CATEGORY = "category";
+    public static final String COL_FRIENDLY = "friendly";
+    public static final String COL_TRY = "try";
+    public static final String COL_CAUTION = "caution";
+    public static final String TXT_TEXT = "TEXT";
+
 
     public DbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
