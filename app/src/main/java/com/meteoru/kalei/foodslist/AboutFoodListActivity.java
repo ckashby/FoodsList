@@ -22,7 +22,7 @@ public class AboutFoodListActivity extends AppCompatActivity {
         tvAboutFoodListIntro = (TextView) findViewById(R.id.tvAboutFoodListIntro);
         tvAboutFoodListHtml = (TextView) findViewById(R.id.tvAboutFoodListHtml);
 
-        String htmlAsString = getString(R.string.about_icn_html);
+        String htmlAsString = getString(R.string.about_food_list_html);
         Spanned htmlAsSpanned = Html.fromHtml(htmlAsString);
         tvAboutFoodListHtml.setText(htmlAsSpanned);
 
