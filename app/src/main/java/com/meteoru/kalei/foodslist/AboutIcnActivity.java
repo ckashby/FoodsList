@@ -3,6 +3,8 @@ package com.meteoru.kalei.foodslist;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
+import android.text.Spanned;
 import android.widget.TextView;
 
 public class AboutIcnActivity extends AppCompatActivity {
@@ -19,6 +21,10 @@ public class AboutIcnActivity extends AppCompatActivity {
 
         tvAboutIcnIntro = (TextView) findViewById(R.id.tvAboutFoodListIntro);
         tvAboutIcnHtml = (TextView) findViewById(R.id.tvAboutIcnHtml);
+
+        String htmlAsString = getString(R.string.about_icn_html);
+        Spanned htmlAsSpanned = Html.fromHtml(htmlAsString);
+        tvAboutIcnHtml.setText(htmlAsSpanned);
 
     }
 
