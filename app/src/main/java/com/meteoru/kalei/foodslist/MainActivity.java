@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -109,5 +111,42 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.action_about_foodlist:
+                goAboutFoodList();
+                return true;
+            case R.id.action_wine_beer:
+                goBeerWine();
+                return true;
+            case R.id.action_about_icn:
+                goAboutIcn();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void goAboutIcn(){
+        Intent i = new Intent(this, AboutIcnActivity.class);
+        startActivity(i);
+    }
+
+    private void goBeerWine(){
+        Intent i = new Intent(this, BeerWineActivity.class);
+        startActivity(i);
+    }
+
+    private void goAboutFoodList(){
+        Intent i = new Intent(this, AboutFoodListActivity.class);
+        startActivity(i);
+    }
 }

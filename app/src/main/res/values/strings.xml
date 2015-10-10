@@ -6,6 +6,10 @@
     <string name="title_tryit">Try It!</string>
     <string name="title_caution">Caution!</string>
 
+    <string name="menu_text_about_food_list">About Food List</string>
+    <string name="menu_text_beer_wine_spirits">Beer Wine &amp; Spirits</string>
+    <string name="menu_text_about_icn">About IC-Network.com</string>
+
     <string name="title_activity_about_icn">About IC-Network.com</string>
     <string name="about_icn_intro">The Interstitial Cystitis Network is a woman owned, "social advocacy" health education company dedicated to interstitial cystitis and other pelvic pain disorders. Using the internet, we create innovative solutions to the pressing problems facing patients diagnosed with urologic conditions, medical care providers who care for them and the research community seeking new treatments and cures. For the past 16 years, we have provided critical 24/7 support to patients in need, developed new educational materials, conducted vital research, provided webinars / lectures and created IC awareness campaigns, all at NO COST to the patients who visit our website</string>
     <string name="about_icn_html">
@@ -20,4 +24,6 @@
         <p>Tweet us at Twitter - <a href="http://www.twitter.com/icnjill/">http://www.twitter.com/icnjill/</a></p>
         ]]>
     </string>
+    <string name="title_activity_beer_wine">BeerWineActivity</string>
+    <string name="title_activity_about_food_list">AboutFoodListActivity</string>
 </resources>

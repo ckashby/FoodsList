@@ -49,6 +49,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.meteoru.kalei.foodslist.MainActivity" />
         </activity>
+        <activity
+            android:name=".BeerWineActivity"
+            android:label="@string/title_activity_beer_wine"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.meteoru.kalei.foodslist.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AboutFoodListActivity"
+            android:label="@string/title_activity_about_food_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.meteoru.kalei.foodslist.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
