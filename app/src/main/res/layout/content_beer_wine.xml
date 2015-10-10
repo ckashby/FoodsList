@@ -10,4 +10,35 @@
     tools:showIn="@layout/activity_beer_wine"
     tools:context="com.meteoru.kalei.foodslist.BeerWineActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvAboutIcn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/beer_wine_intro"
+                android:textColor="#000"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvAboutIcnHtml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAboutIcn"
+                android:layout_marginTop="8dp"
+                android:text="@string/beer_wine_html"
+                android:textColor="#000"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </RelativeLayout>

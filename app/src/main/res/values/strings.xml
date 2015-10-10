@@ -25,5 +25,12 @@
         ]]>
     </string>
     <string name="title_activity_beer_wine">BeerWineActivity</string>
+    <string name="beer_wine_intro">Beer wine intro</string>
+    <string name="beer_wine_html">Beer wine html</string>
+
     <string name="title_activity_about_food_list">AboutFoodListActivity</string>
+    <string name="about_food_list_intro">About foodlist intro</string>
+    <string name="about_food_list_html">About foodlist html</string>
+
+
 </resources>

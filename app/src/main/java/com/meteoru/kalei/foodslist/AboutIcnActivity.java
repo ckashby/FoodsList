@@ -3,12 +3,11 @@ package com.meteoru.kalei.foodslist;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.webkit.WebView;
 import android.widget.TextView;
 
 public class AboutIcnActivity extends AppCompatActivity {
     TextView tvAboutIcnIntro;
-    WebView wvAboutIcnHtml;
+    TextView tvAboutIcnHtml;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +17,8 @@ public class AboutIcnActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        TextView tvAboutIcnIntro = (TextView) findViewById(R.id.tvAboutIcn);
-        WebView wvAboutIcnHtml = (WebView) findViewById(R.id.wvAboutIcn);
-
+        tvAboutIcnIntro = (TextView) findViewById(R.id.tvAboutIcn);
+        tvAboutIcnHtml = (TextView) findViewById(R.id.tvAboutIcnHtml);
 
     }
 
