@@ -20,7 +20,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tvAboutIcn"
+                android:id="@+id/tvAboutFoodListIntro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/about_food_list_intro"
@@ -28,10 +28,10 @@
                 android:textSize="14sp"/>
 
             <TextView
-                android:id="@+id/tvAboutIcnHtml"
+                android:id="@+id/tvAboutFoodListHtml"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tvAboutIcn"
+                android:layout_below="@+id/tvAboutFoodListIntro"
                 android:layout_marginTop="8dp"
                 android:text="@string/about_food_list_html"
                 android:textColor="#000"

@@ -17,7 +17,7 @@ public class AboutIcnActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        tvAboutIcnIntro = (TextView) findViewById(R.id.tvAboutIcn);
+        tvAboutIcnIntro = (TextView) findViewById(R.id.tvAboutFoodListIntro);
         tvAboutIcnHtml = (TextView) findViewById(R.id.tvAboutIcnHtml);
 
     }

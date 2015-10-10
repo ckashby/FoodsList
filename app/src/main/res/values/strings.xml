@@ -24,6 +24,7 @@
         <p>Tweet us at Twitter - <a href="http://www.twitter.com/icnjill/">http://www.twitter.com/icnjill/</a></p>
         ]]>
     </string>
+
     <string name="title_activity_beer_wine">BeerWineActivity</string>
     <string name="beer_wine_intro">Beer wine intro</string>
     <string name="beer_wine_html">Beer wine html</string>

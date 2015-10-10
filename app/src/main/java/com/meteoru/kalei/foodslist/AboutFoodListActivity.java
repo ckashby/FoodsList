@@ -3,8 +3,11 @@ package com.meteoru.kalei.foodslist;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 
 public class AboutFoodListActivity extends AppCompatActivity {
+    TextView tvAboutFoodListIntro;
+    TextView tvAboutFoodListHtml;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,6 +16,9 @@ public class AboutFoodListActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        tvAboutFoodListIntro = (TextView) findViewById(R.id.tvAboutFoodListIntro);
+        tvAboutFoodListHtml = (TextView) findViewById(R.id.tvAboutFoodListHtml);
     }
 
 }
