@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // Launch selected Activity from the drop down menu
         switch (item.getItemId()){
             case R.id.action_about_foodlist:
                 goAboutFoodList();
