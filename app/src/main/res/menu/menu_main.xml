@@ -5,13 +5,17 @@
         android:title="@string/menu_text_about_food_list"
         android:orderInCategory="100"
         app:showAsAction="never" />
+    <item android:id="@+id/action_flare_fighting"
+        android:title="@string/menu_text_flare_fighting_foods"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
     <item android:id="@+id/action_wine_beer"
         android:title="@string/menu_text_beer_wine_spirits"
-        android:orderInCategory="200"
+        android:orderInCategory="300"
         app:showAsAction="never" />
     <item android:id="@+id/action_about_icn"
         android:title="@string/menu_text_about_icn"
-        android:orderInCategory="300"
+        android:orderInCategory="400"
         app:showAsAction="never" />
 
 </menu>

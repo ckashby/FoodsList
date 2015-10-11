@@ -6,6 +6,7 @@
     <string name="title_tryit">Try It!</string>
     <string name="title_caution">Caution!</string>
 
+    <string name="menu_text_flare_fighting_foods">Flare Fighting Foods</string>
     <string name="menu_text_about_food_list">About Food List</string>
     <string name="menu_text_beer_wine_spirits">Beer Wine &amp; Spirits</string>
     <string name="menu_text_about_icn">About IC-Network.com</string>
@@ -56,6 +57,35 @@
 <p>This application, the IC Network website and publications are for informational purposes only. The IC Network is not a medical authority nor do they provide any medical advice. Nothing contained in this should be considered medical advice and should not be relied upon as a substitute for consultation with a qualified medical professional. We strongly recommend that you discuss your medical care and treatment with your personal medical care provider. Only that medical professional can, and should, give you medical advice.</p>
         ]]>
     </string>
+    <string name="title_activity_flare_fighting">FlareFightingActivity</string>
+    <string name="flare_fighting_foods_intro">The worst thing that you can do when your bladder symptoms are active is to eat something that may irritate the bladder further. A daily cup of coffee, black tea, green tea, soda pop and even cranberry juice can trigger bladder pain and discomfort. Thus, your first line of defense in both preventing and managing bladder flares is to modify your diet. Foods labelled with a (+) sign have been reported by patients to be especially soothing during bladder flares.  </string>
+    <string name="flare_fighting_foods_html">
+        <![CDATA[
+        <h3>What can you eat during a flare?</h3>
+<p>There is no reason to be afraid to eat! There are many foods that you can enjoy even with a sensitive bladder though every patient has individual food sensitivities that may take a little time for you to figure out. For severe flares, stick with foods in the “bladder friendly” category. When your bladder symptoms improve and you’re ready to add variety to your diet, try small portions of the foods in the "try it" list.   Avoid foods in the "caution" category.</p>
+<p>Scrambled eggs and hash browns, for example, make a very viable breakfast. For lunch, consider having some homemade soup or a turkey sandwich.  Almonds, carrots, crackers, pears make for energy boosting snacks in the afternoon. For large meals, a nice cut of meat served with vegetables, rice or potatoes is ideal. Looking for something sweet? Think vanilla or caramel ice cream.</p>
+<h3>What should you drink?</h3>
+<p>Chamomile or peppermint herbal teas can be especially soothing and have a proven antispasmodic effect. Water, hot water with honey or sugar, hot milk and even vanilla milkshakes are also bladder friendly. Coffees, black and green teas, sodas and citrus juices should be avoided.</p>
+<h3>Afraid to eat?</h3>
+<p>There is no reason to be afraid to eat. There are many foods that you can enjoy and we hope that this application will help you!  If you are unsure of what to eat, we encourage you to read some of the books currently available about diet and IC, as well as to watch our "Living with IC" video series. Registered dietitians can also provide assistance. The ICN offers personal coaching sessions with a registered dietitian.</p>
+<h3>Additional Information:</h3>
+<p>ICN Flare Management Guide</p>
+<p>http://www.ic-network.com/selfhelp/flares.html</p>
+<p>The ICN Diet Guide</p>
+<p>http://www.ic-network.com/diet/</p>
+<p>IC Diet & Nutrition Books</p>
+<p>http://www.icnsales.com/books/</p>
 
+<p>-A Taste of the Good Life: A Cookbook For An IC Diet</p>
+<p>-Confident Choices: Customizing the IC Diet</p>
+<p>-Confident Choices: A Cookbook for IC and OAB</p>
+<p>-The Happy Bladder Cookbook</p>
+<p>-The Happy Bladder Christmas Cookbook</p>
+<p>-IC Friendly Fit and Fresh</p>
+<p>Living with IC Video Series</p>
+<p>http://www.ic-network.com/videos/</p>
+
+        ]]>
+    </string>
 
 </resources>

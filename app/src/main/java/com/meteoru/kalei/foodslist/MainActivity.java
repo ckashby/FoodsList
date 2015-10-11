@@ -122,6 +122,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Launch selected Activity from the drop down menu
         switch (item.getItemId()){
+            case R.id.action_flare_fighting:
+                goFlareFighting();
+                return true;
             case R.id.action_about_foodlist:
                 goAboutFoodList();
                 return true;
@@ -134,6 +137,11 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void goFlareFighting(){
+        Intent i = new Intent(this, FlareFightingActivity.class);
+        startActivity(i);
     }
 
     private void goAboutIcn(){

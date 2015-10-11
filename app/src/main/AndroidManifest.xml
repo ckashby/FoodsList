@@ -67,6 +67,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.meteoru.kalei.foodslist.MainActivity" />
         </activity>
+        <activity
+            android:name=".FlareFightingActivity"
+            android:label="@string/title_activity_flare_fighting"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.meteoru.kalei.foodslist.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
