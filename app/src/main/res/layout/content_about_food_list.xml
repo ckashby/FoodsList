@@ -28,12 +28,22 @@
                 android:textSize="14sp"/>
 
             <TextView
-                android:id="@+id/tvAboutFoodListHtml"
+            android:id="@+id/tvAboutFoodListHtml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAboutFoodListIntro"
+            android:layout_marginTop="8dp"
+            android:text="@string/about_food_list_html"
+            android:textColor="#000"
+            android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvAboutFoodListHtml2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tvAboutFoodListIntro"
+                android:layout_below="@+id/tvAboutFoodListHtml"
                 android:layout_marginTop="8dp"
-                android:text="@string/about_food_list_html"
+                android:text="@string/about_food_list_html2"
                 android:textColor="#000"
                 android:textSize="14sp"/>
 

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">ICN FoodList</string>
-    <string name="title_activity_product_menu">ProductMenuActivity</string>
+    <string name="title_activity_product_menu">Food Categories</string>
     <string name="title_activity_details">Food Details</string>
     <string name="title_friendly">Friendly</string>
     <string name="title_tryit">Try It!</string>
@@ -26,22 +26,31 @@
         ]]>
     </string>
 
-    <string name="title_activity_beer_wine">BeerWineActivity</string>
+    <string name="title_activity_beer_wine">Wine Beer and Spirits</string>
     <string name="beer_wine_intro">Beer wine intro</string>
     <string name="beer_wine_html">Beer wine html</string>
 
-    <string name="title_activity_about_food_list">AboutFoodListActivity</string>
-    <string name="about_food_list_intro">Most patients with bladder sensitivity have noticed that their bladder symptoms worsen after they eat certain foods or beverages. Why? Foods containing high levels of acid, caffeine, histamine or alcohol can trigger bladder irritation and inflammation.</string>
+    <string name="title_activity_about_food_list">About Our Food List</string>
+    <string name="about_food_list_intro">Most patients with bladder sensitivity have noticed that their bladder symptoms worsen after they eat certain foods or beverages. Why?
+        Foods containing high levels of acid, caffeine, histamine or alcohol can trigger bladder irritation and inflammation.</string>
     <string name="about_food_list_html">
         <![CDATA[
-        <p>This application offers a quick reference guide to help you select more bladder friendly foods. This information is based upon research data, clinician experience, various IC books and years of anecdotal patient reports collected through the Interstitial Cystitis Network (<a href="http://www.ic-network.com">http://www.ic-network.com</a>) patient community. While this application can’t predict how your bladder will react to every food, it does offer general trends seen in the interstitial cystitis (IC) patient community.</p>
-<p>“Bladder Friendly Foods” are those which most patients tolerate well.  These are the foods and beverages we suggest that you consume when you are having bladder discomfort. They rarely trigger bladder irritation.</p>
+        <p>This application offers a quick reference guide to help you select more bladder friendly foods. This information is based upon research data, clinician experience,
+        various IC books and years of anecdotal patient reports collected through the Interstitial Cystitis Network patient community.</p>
+               ]]>
+    </string>
+    <string name="about_food_list_html2">
+        <![CDATA[
+<p>While this application can’t predict how your bladder will react to every food, it does offer general trends seen in the interstitial cystitis (IC) patient community.</p>
+<p>“Bladder Friendly Foods” are those which most patients tolerate well.  These are the foods and beverages we suggest that you consume when you are having bladder discomfort.
+They rarely trigger bladder irritation.</p>
 <p>“Foods Worth Trying Cautiously” are generally safe though they may irritate more sensitive bladders. They should be tried in small quantities first.</p>
 <p>“Foods To Avoid” are those well known for triggering bladder discomfort.</p>
+
 <h3>How long should you try diet modification?</h3>
 <p>We suggest three to six months at a minimum. As your symptoms improve, you may be able to introduce more risk foods. Coffee drinkers, for example, may be able to tolerate herbal or low acid coffees. Because IC symptoms often wax and wane, most patients find that sticking to a lower acid diet to be helpful in both preventing and managing diet induced flares.</p>
+
 <h3>Acknowledgements</h3>
-<p>AkPharma, makers of Prelief, for supporting the work of the IC Network and the development of this application.</p>
 <p>Beverley Laumann and Julie Beyer RD who have written three superb books discussing the IC diet that have helped thousands of patients eat a balanced healthy diet.</p>
 <p>Barbara Shorter RD, CDN and Robert Moldwin MD provided valuable IC and diet research studies which validated some but not all of our patient reports.</p>
 <h3>Suggested Reading</h3>
@@ -52,12 +61,12 @@
 <h3>About The Author</h3>
 <p>Jill Osborne MA was the first support group leader to recognize the value of the internet in bringing support to patients who were too ill leave their homes. She founded and built the IC Network website in 1995. She wears many hats: writer, editor, speaker, researcher, programmer and animal lover. She would love to hear your comments and suggestions about this app! jill@ic-network.com</p>
 <h3>Copyright & Disclaimer</h3>
-<p>Copyright &copy; 2012, 2013 - Interstitial Cystitis Network - All Rights Reserved</p>
+<p>Copyright &copy; 2012, 2016 - Interstitial Cystitis Network - All Rights Reserved</p>
 <p><a href="http://www.ic-network.com">http://www.ic-network.com</a></p>
 <p>This application, the IC Network website and publications are for informational purposes only. The IC Network is not a medical authority nor do they provide any medical advice. Nothing contained in this should be considered medical advice and should not be relied upon as a substitute for consultation with a qualified medical professional. We strongly recommend that you discuss your medical care and treatment with your personal medical care provider. Only that medical professional can, and should, give you medical advice.</p>
         ]]>
     </string>
-    <string name="title_activity_flare_fighting">FlareFightingActivity</string>
+    <string name="title_activity_flare_fighting">Flare Fighting Foods</string>
     <string name="flare_fighting_foods_intro">The worst thing that you can do when your bladder symptoms are active is to eat something that may irritate the bladder further. A daily cup of coffee, black tea, green tea, soda pop and even cranberry juice can trigger bladder pain and discomfort. Thus, your first line of defense in both preventing and managing bladder flares is to modify your diet. Foods labelled with a (+) sign have been reported by patients to be especially soothing during bladder flares.  </string>
     <string name="flare_fighting_foods_html">
         <![CDATA[

@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class AboutFoodListActivity extends AppCompatActivity {
     TextView tvAboutFoodListIntro;
     TextView tvAboutFoodListHtml;
+    TextView tvAboutFoodListHtml2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +22,15 @@ public class AboutFoodListActivity extends AppCompatActivity {
 
         tvAboutFoodListIntro = (TextView) findViewById(R.id.tvAboutFoodListIntro);
         tvAboutFoodListHtml = (TextView) findViewById(R.id.tvAboutFoodListHtml);
+        tvAboutFoodListHtml2 = (TextView) findViewById(R.id.tvAboutFoodListHtml2);
 
         String htmlAsString = getString(R.string.about_food_list_html);
         Spanned htmlAsSpanned = Html.fromHtml(htmlAsString);
         tvAboutFoodListHtml.setText(htmlAsSpanned);
+
+        String htmlAsString2 = getString(R.string.about_food_list_html2);
+        Spanned htmlAsSpanned2 = Html.fromHtml(htmlAsString2);
+        tvAboutFoodListHtml2.setText(htmlAsSpanned2);
 
     }
 
