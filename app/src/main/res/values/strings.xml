@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">FoodsList</string>
+    <string name="app_name">ICN FoodList</string>
     <string name="title_activity_product_menu">ProductMenuActivity</string>
-    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_details">Food Details</string>
     <string name="title_friendly">Friendly</string>
     <string name="title_tryit">Try It!</string>
     <string name="title_caution">Caution!</string>
 
     <string name="menu_text_flare_fighting_foods">Flare Fighting Foods</string>
-    <string name="menu_text_about_food_list">About Food List</string>
+    <string name="menu_text_about_food_list">About Our Food List</string>
     <string name="menu_text_beer_wine_spirits">Beer Wine &amp; Spirits</string>
     <string name="menu_text_about_icn">About IC-Network.com</string>
 

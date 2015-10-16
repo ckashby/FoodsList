@@ -23,7 +23,7 @@
                 android:id="@+id/tvFlareFightingIntro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/beer_wine_intro"
+                android:text="@string/flare_fighting_foods_intro"
                 android:textColor="#000"
                 android:textSize="14sp"/>
 
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvFlareFightingIntro"
                 android:layout_marginTop="8dp"
-                android:text="@string/beer_wine_html"
+                android:text="@string/flare_fighting_foods_html"
                 android:textColor="#000"
                 android:textSize="14sp"/>
 
