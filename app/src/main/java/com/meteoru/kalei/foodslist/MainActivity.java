@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
             ArrayAdapter aLvMainMenu = new ArrayAdapter(
                     MainActivity.this, R.layout.food_item_layout, R.id.tvFoodListView, alData);
             lvMainMenu.setAdapter(aLvMainMenu);
-
         }
     }
 
@@ -101,12 +100,10 @@ public class MainActivity extends AppCompatActivity {
             if (convertView == null) {
                 convertView = LayoutInflater.from(mContext).inflate(R.layout.food_item_layout, parent, false);
             }
-
             Food item = getItem(position);
             //Log.d("MainActivity", item.category);
             TextView textView = (TextView) convertView.findViewById(R.id.text);
             textView.setText(item.getCategory());
-
             return convertView;
         }
     }

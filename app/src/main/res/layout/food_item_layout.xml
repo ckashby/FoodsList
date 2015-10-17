@@ -11,5 +11,5 @@
         android:minHeight="?android:attr/listPreferredItemHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dairy, Eggs and Cheese"/>
+        android:text=""/>
 </LinearLayout>
