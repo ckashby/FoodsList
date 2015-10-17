@@ -8,19 +8,19 @@
 
     <string name="menu_text_flare_fighting_foods">Flare Fighting Foods</string>
     <string name="menu_text_about_food_list">About Our Food List</string>
-    <string name="menu_text_beer_wine_spirits">Beer Wine &amp; Spirits</string>
+    <string name="menu_text_beer_wine_spirits">Beer Wine and Spirits</string>
     <string name="menu_text_about_icn">About IC-Network.com</string>
 
 
     <string name="title_activity_about_icn">About IC-Network.com</string>
     <string name="about_icn_intro">The Interstitial Cystitis Network is a woman owned, "social advocacy" health education company dedicated to interstitial cystitis and other pelvic pain disorders.
-        Using the internet, we create innovative solutions to the pressing problems facing patients diagnosed with urologic conditions, medical care providers who care for them and the research
-        community seeking new treatments and cures. For the past 16 years, we have provided critical 24/7 support to patients in need, developed new educational materials, conducted vital research,
-        provided webinars / lectures and created IC awareness campaigns, all at NO COST to the patients who visit our website</string>
+        Using the internet, we create innovative solutions to the pressing problems facing patients diagnosed with urologic conditions. The IC Network is the top rated Website in peer reviewed research
+        studies conducted by Harvard Medical School (2011) and the University of London (2013). For the past 16 years, we have provided critical 24/7 support to patients in need, developed new educational
+        materials, conducted vital research, provided webinars / lectures and created IC awareness campaigns, all at NO COST to the patients who visit our website. - http://www.ic-network.com</string>
     <string name="about_icn_html">
         <![CDATA[
-        <p>Learn more about IC! - <a href="http://www.ic-network.com">http://www.ic-network.com</a></p>
-        <p>Watch the Living With IC Video Series - <a href="http://www.ic-network.com">http://www.ic-network.com/videos/</a></p>
+        <p>Learn more about IC! - http://www.ic-network.com</p>
+        <p>Watch the Living With IC Video Series - http://www.ic-network.com/videos/</p>
         <p>Meet other patients and join our live support chats! - <a href="http://www.ic-network.com/support/">http://www.ic-network.com/support/</a></p>
         <p>Sign up for our free e-newsletter! - <a href="http://www.ic-network.com/newsletters/">http://www.ic-network.com/newsletters/</a></p>
         <p>Subscribe to the IC Optimist Magazine! - <a href="http://www.ic-network.com/subscriptions/">http://www.ic-network.com/subscriptions/</a></p>
@@ -41,6 +41,7 @@
         <![CDATA[
         <p>This application offers a quick reference guide to help you select more bladder friendly foods. This information is based upon research data, clinician experience,
         various IC books and years of anecdotal patient reports collected through the Interstitial Cystitis Network patient community.</p>
+        <p>http://www.ic-network.com/</p>
                ]]>
     </string>
     <string name="about_food_list_html2">
@@ -56,13 +57,18 @@ They rarely trigger bladder irritation.</p>
 coffees. Because IC symptoms often wax and wane, most patients find that sticking to a lower acid diet to be helpful in both preventing and managing diet induced flares.</p>
 
 <h3>Acknowledgements</h3>
+
 <p>Beverley Laumann and Julie Beyer RD who have written three superb books discussing the IC diet that have helped thousands of patients eat a balanced healthy diet.</p>
 <p>Barbara Shorter RD, CDN and Robert Moldwin MD provided valuable IC and diet research studies which validated some but not all of our patient reports.</p>
+
 <h3>Suggested Reading</h3>
-<p>The ICN Diet Guide:</p>
-<p><a href="http://www.ic-network.com/diet/>http://www.ic-network.com/diet/</a></p>
-<p>IC Diet, Nutrition & Cookbooks:</p>
-<p><a href="http://www.icnsales.com/books/">http://www.icnsales.com/books/</a></p>
+
+<p>The ICN Diet Guide: <br>
+http://www.ic-network.com/diet/</p>
+
+<p>IC Diet, Nutrition and Cookbooks: <br>
+http://www.icnsales.com/books/</p>
+
 <h3>About The Author</h3>
 <p>Jill Osborne MA was the first support group leader to recognize the value of the internet in bringing support to patients who were too ill leave their homes. She founded and built the IC Network
 website in 1995. She wears many hats: writer, editor, speaker, researcher, programmer and animal lover. She would love to hear your comments and suggestions about this app! jill@ic-network.com</p>
@@ -74,6 +80,7 @@ in this should be considered medical advice and should not be relied upon as a s
 care and treatment with your personal medical care provider. Only that medical professional can, and should, give you medical advice.</p>
         ]]>
     </string>
+
     <string name="title_activity_flare_fighting">Flare Fighting Foods</string>
     <string name="flare_fighting_foods_intro">The worst thing that you can do when your bladder symptoms are active is to eat something that may irritate the bladder further. A daily cup of coffee,
         black tea, green tea, soda pop and even cranberry juice can trigger bladder pain and discomfort. Thus, your first line of defense in both preventing and managing bladder flares is to modify
@@ -95,21 +102,15 @@ friendly. Coffees, black and green teas, sodas and citrus juices should be avoid
 of the books currently available about diet and IC, as well as to watch our "Living with IC" video series. Registered dietitians can also provide assistance. The ICN offers personal coaching
 sessions with a registered dietitian.</p>
 <h3>Additional Information:</h3>
-<p>ICN Flare Management Guide</p>
-<p>http://www.ic-network.com/selfhelp/flares.html</p>
-<p>The ICN Diet Guide</p>
+<p>ICN Flare Management Guide<br>
+http://www.ic-network.com/selfhelp/flares.html</p>
+<p>The ICN Diet Guide<br>
 <p>http://www.ic-network.com/diet/</p>
 <p>IC Diet & Nutrition Books</p>
 <p>http://www.icnsales.com/books/</p>
 
-<p>-A Taste of the Good Life: A Cookbook For An IC Diet</p>
-<p>-Confident Choices: Customizing the IC Diet</p>
-<p>-Confident Choices: A Cookbook for IC and OAB</p>
-<p>-The Happy Bladder Cookbook</p>
-<p>-The Happy Bladder Christmas Cookbook</p>
-<p>-IC Friendly Fit and Fresh</p>
-<p>Living with IC Video Series</p>
-<p>http://www.ic-network.com/videos/</p>
+<p>Living with IC Video Series<br>
+http://www.ic-network.com/videos/</p>
 
         ]]>
     </string>

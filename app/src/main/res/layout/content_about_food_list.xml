@@ -31,22 +31,16 @@
             android:id="@+id/tvAboutFoodListHtml"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autoLink="all"
             android:layout_below="@+id/tvAboutFoodListIntro"
             android:layout_marginTop="8dp"
             android:text="@string/about_food_list_html"
             android:textColor="#000"
             android:textSize="14sp"/>
 
-            <Button
-                android:id="@+id/btWebICNetwork"
-                android:text="@string/url_www_icnetwork_com"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#fff"
-                android:textColor="#33691e"/>
-
             <TextView
                 android:id="@+id/tvAboutFoodListHtml2"
+                android:autoLink="all"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvAboutFoodListHtml"
