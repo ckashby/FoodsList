@@ -5,6 +5,9 @@
     <string name="title_friendly">Friendly</string>
     <string name="title_tryit">Try It!</string>
     <string name="title_caution">Caution!</string>
+    <string name="title_progress_bar">Loading Data...</string>
+    <string name="title_progress_network_error">Network Connection Unavaiable. Please try again later.</string>
+    <string name="title_progress_parse_unavailable">Network Server Unavaiable. Please try again later</string>
 
     <string name="menu_text_flare_fighting_foods">Flare Fighting Foods</string>
     <string name="menu_text_about_food_list">About Our Food List</string>

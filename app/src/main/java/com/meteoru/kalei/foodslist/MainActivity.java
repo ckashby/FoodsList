@@ -1,5 +1,6 @@
 package com.meteoru.kalei.foodslist;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     ListView lvMainMenu;
     DbHelper dbHelper;
     List<String> alData;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,12 +56,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void queryParse(){
+        progressDialog = ProgressDialog.show(this, getString(R.string.title_progress_bar), "");
         ParseQuery<ParseObject> parseQuery = ParseQuery.getQuery("Food");
         parseQuery.setLimit(500);
         parseQuery.findInBackground(new FindCallback<ParseObject>() {
 
             @Override
             public void done(List<ParseObject> list, ParseException e) {
+            if (progressDialog != null) {
+                progressDialog.dismiss();
+            }
                 if (e == null) {
                     Log.d("MainActivity", "Finished query with successfull response: " + list.size());
                     for (int i = 0; i < list.size(); i++){
@@ -68,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
                     ArrayAdapter aLvMainMenu = new ArrayAdapter(
                             MainActivity.this, R.layout.food_item_layout, R.id.tvFoodListView, alData);
                     lvMainMenu.setAdapter(aLvMainMenu);
+                } else {
+                    Toast.makeText(MainActivity.this, getString(R.string.title_progress_parse_unavailable),
+                            Toast.LENGTH_LONG).show();
                 }
             }
         });
