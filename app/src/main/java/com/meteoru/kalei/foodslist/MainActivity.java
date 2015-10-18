@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void queryParse(){
         ParseQuery<ParseObject> parseQuery = ParseQuery.getQuery("Food");
+        parseQuery.setLimit(500);
         parseQuery.findInBackground(new FindCallback<ParseObject>() {
 
             @Override
