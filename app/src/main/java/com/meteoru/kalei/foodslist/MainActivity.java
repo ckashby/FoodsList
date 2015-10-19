@@ -47,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
         dbHelper = new DbHelper(this);
         alData = dbHelper.getMainMenu();
         if (alData.size() == 0){
+            if (!Util.isConnectedToInternet(this)) {
+                Util.noInternetDialog(this).show();
+                return;
+            } 
             queryParse();
         } else {
             ArrayAdapter aLvMainMenu = new ArrayAdapter(
