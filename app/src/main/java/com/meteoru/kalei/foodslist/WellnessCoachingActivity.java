@@ -19,7 +19,7 @@ public class WellnessCoachingActivity extends AppCompatActivity {
 
         tvWellnessCoachingIntro = (TextView) findViewById(R.id.tvWellnessCoachingIntro);
         getTvWellnessCoachingHtml = (TextView) findViewById(R.id.tvWellnessCoachingHtml);
-        tvWellnessCoachingIntro.setText(getString(R.string.wellnessCoachingIntro));
+        tvWellnessCoachingIntro.setText(getString(R.string.wellness_coaching_intro));
 
 
     }
