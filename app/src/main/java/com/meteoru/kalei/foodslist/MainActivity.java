@@ -140,8 +140,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_about_foodlist:
                 goAboutFoodList();
                 return true;
-            case R.id.action_wine_beer:
-                goBeerWine();
+            case R.id.action_wellness:
+                goWellness();
                 return true;
             case R.id.action_about_icn:
                 goAboutIcn();
@@ -161,8 +161,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    private void goBeerWine(){
-        Intent i = new Intent(this, BeerWineActivity.class);
+    private void goWellness(){
+        Intent i = new Intent(this, WellnessCoachingActivity.class);
         startActivity(i);
     }
 

@@ -76,6 +76,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.meteoru.kalei.foodslist.MainActivity" />
         </activity>
+        <activity
+            android:name=".WellnessCoachingActivity"
+            android:label="@string/title_activity_wellness_coaching"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.meteoru.kalei.foodslist.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
