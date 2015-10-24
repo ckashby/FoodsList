@@ -117,6 +117,7 @@ http://www.ic-network.com/videos/</p>
         ]]>
     </string>
     <string name="url_www_icnetwork_com">http://www.ic-network.com</string>
+    <string name="url_www_icnetwork_com_wellness">http://www.icnsales.com/wellness-coaching/</string>
 
 
     <string name="title_activity_wellness_coaching">Wellness Coaching</string>
@@ -126,7 +127,7 @@ http://www.ic-network.com/videos/</p>
         advice, nor are they intended to be a substitute for professional medical advice, care or counseling services. As educators, their goal is to help you become an advocate for your
         medical care. We strongly encourage you to gather information from multiple sources, to explore pros and cons of various strategies and, most of all, have good discussions with your
         personal medical care team about your choices and plans.</string>
-    <string name="wellness_couaching_html">Fix Camelcase on string above</string>
+    <string name="wellness_couaching_html">http://www.icnsales.com/wellness-coaching/</string>
 
 
 </resources>
