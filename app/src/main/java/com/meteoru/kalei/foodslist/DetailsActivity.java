@@ -40,6 +40,21 @@ public class DetailsActivity extends AppCompatActivity {
         tvFriendlyText.setText(food.getFriendly());
         tvTryItText.setText(food.getTryit());
         tvCautionText.setText(food.getCaution());
+
+        if (food.getFriendly() == null || food.getFriendly().trim().isEmpty()){
+            tvFriendlyTitle.setVisibility(TextView.GONE);
+            tvFriendlyText.setVisibility(TextView.GONE);
+        }
+
+        if (food.getTryit() == null || food.getTryit().trim().isEmpty()){
+            tvTryItTitle.setVisibility(TextView.GONE);
+            tvTryItText.setVisibility(TextView.GONE);
+        }
+
+        if (food.getCaution() == null || food.getCaution().trim().isEmpty()){
+            tvCautionTitle.setVisibility(TextView.GONE);
+            tvCautionText.setVisibility(TextView.GONE);
+        }
     }
 
 }
