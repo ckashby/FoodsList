@@ -25,6 +25,7 @@ public class DbHelper extends SQLiteOpenHelper{
     public static final String COL_TRY = "try";
     public static final String COL_CAUTION = "caution";
     public static final String TXT_TEXT = "TEXT";
+    private static final String TAG = DbHelper.class.getSimpleName();
 
 
     public DbHelper(Context context) {
@@ -35,7 +36,7 @@ public class DbHelper extends SQLiteOpenHelper{
     public void onCreate(SQLiteDatabase db) {
         String createQuery = "CREATE TABLE " + TABLE_NAME
                 + " ( objectId TEXT PRIMARY KEY, " +
-                "name TEXT, description TEXT, category TEXT, friendly TEXT, try TEXT, caution TEXT)";
+                "name TEXT, description TEXT, category TEXT NOT NULL ON CONFLICT IGNORE, friendly TEXT, try TEXT, caution TEXT)";
         db.execSQL(createQuery);
     }
 
@@ -57,7 +58,12 @@ public class DbHelper extends SQLiteOpenHelper{
         values.put("caution", foodObject.getString("caution"));
 
         SQLiteDatabase db = this.getWritableDatabase();
-        db.insert("food", null, values);
+        long id = db.insert("food", null, values);
+
+        if (id < 0) {
+            Log.d(TAG, "Something went wrong inserting the item");
+        }
+
         db.close();
     }
 
@@ -87,7 +93,6 @@ public class DbHelper extends SQLiteOpenHelper{
 
                 int cautionIdx = cursor.getColumnIndex("caution");
                 String caution = cursor.getString(cautionIdx);
-                Log.d("DbHelper", name + " with category " + category);
                 allFoods.add(new Food(objectId, name, description, category, friendly, tryit, caution));
 
             } while (cursor.moveToNext());
@@ -100,12 +105,18 @@ public class DbHelper extends SQLiteOpenHelper{
     public List<String> getMainMenu(){
         SQLiteDatabase db = this.getReadableDatabase();
         List<String> allFoods = new ArrayList<String>();
-        Cursor cursor = db.query(true, "food", new String[]{ "category"}, null, null, null, null, "category", null);
+        Cursor cursor = db.query(true, "food", new String[]{"category"}, null, null, null, null, "category", null);
 
         if (cursor.moveToFirst()) {
             do {
                 int categoryIdx = cursor.getColumnIndex("category");
                 String category = cursor.getString(categoryIdx);
+
+                if (category == null) {
+                    Log.d("DbHelper", "category is null");
+                } else {
+                    Log.d("DbHelper", category);
+                }
                 allFoods.add(category);
             } while (cursor.moveToNext());
         }
@@ -142,7 +153,6 @@ public class DbHelper extends SQLiteOpenHelper{
 
                 int cautionIdx = cursor.getColumnIndex("caution");
                 String caution = cursor.getString(cautionIdx);
-                Log.d("DbHelper", name + " with category " + category);
                 productMenu.add(new Food(objectId, name, description, category, friendly, tryit, caution));
 
             } while (cursor.moveToNext());

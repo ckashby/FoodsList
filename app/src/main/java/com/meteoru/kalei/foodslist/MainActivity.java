@@ -26,6 +26,7 @@ import com.parse.ParseQuery;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = MainActivity.class.getSimpleName();
     ListView lvMainMenu;
     DbHelper dbHelper;
     List<String> alData;
