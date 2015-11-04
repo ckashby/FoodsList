@@ -41,6 +41,7 @@ public class ProductMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_menu);
+
         detailsContainer = (FrameLayout) findViewById(R.id.detailsContainer);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
