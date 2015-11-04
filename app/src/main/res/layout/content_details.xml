@@ -52,7 +52,8 @@
                 android:textStyle="bold"
                 android:layout_below="@+id/tvDescription"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/paragraph_top_margin"/>
 
             <TextView
                 android:id="@+id/tvFriendlyText"
@@ -69,20 +70,19 @@
                 android:id="@+id/tvTryItTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/title_tryit"
                 android:textColor="#F60"
                 android:textStyle="bold"
                 android:layout_below="@+id/tvFriendlyText"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/paragraph_top_margin"/>
 
             <TextView
                 android:id="@+id/tvTryItText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:text=""
                 android:autoLink="all"
                 android:textColor="#000"
@@ -100,7 +100,8 @@
                 android:id="@+id/tvCautionTitle"
                 android:layout_below="@+id/tvTryItText"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/paragraph_top_margin"/>
 
             <TextView
                 android:id="@+id/tvCautionText"
