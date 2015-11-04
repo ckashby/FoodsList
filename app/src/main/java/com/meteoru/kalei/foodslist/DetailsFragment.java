@@ -37,12 +37,12 @@ public class DetailsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View layout = inflater.inflate(R.layout.content_product_menu, container, false);
+        View layout = inflater.inflate(R.layout.content_details, container, false);
         tvName = (TextView) layout.findViewById(R.id.tvName);
         tvDescription = (TextView) layout.findViewById(R.id.tvDescription);
         tvFriendlyTitle = (TextView) layout.findViewById(R.id.tvFriendlyTitle);
         tvFriendlyText = (TextView) layout.findViewById(R.id.tvFriendlyText);
-        tvTryItTitle = (TextView) layout.findViewById(R.id.tvFriendlyTitle);
+        tvTryItTitle = (TextView) layout.findViewById(R.id.tvTryItTitle);
         tvTryItText = (TextView) layout.findViewById(R.id.tvTryItText);
         tvCautionTitle = (TextView) layout.findViewById(R.id.tvCautionTitle);
         tvCautionText = (TextView) layout.findViewById(R.id.tvCautionText);
@@ -58,9 +58,9 @@ public class DetailsFragment extends Fragment {
             tvFriendlyText.setVisibility(TextView.GONE);
         }
 
-        if (food.getTryit() == null || food.getTryit().trim().isEmpty()){
-            tvTryItTitle.setVisibility(TextView.GONE);
-            tvTryItText.setVisibility(TextView.GONE);
+        if (food.getTryit() != null && !food.getTryit().trim().isEmpty()){
+            tvTryItTitle.setVisibility(TextView.VISIBLE);
+            tvTryItText.setVisibility(TextView.VISIBLE);
         }
 
         if (food.getCaution() == null || food.getCaution().trim().isEmpty()){

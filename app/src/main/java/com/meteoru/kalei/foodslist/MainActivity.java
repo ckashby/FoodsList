@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 progressDialog.dismiss();
             }
                 if (e == null) {
-                    Log.d("MainActivity", "Finished query with successfull response: " + list.size());
+                    Log.d(TAG, "Finished query with successfull response: " + list.size());
                     for (int i = 0; i < list.size(); i++){
                         dbHelper.insertFood(list.get(i));
                     }

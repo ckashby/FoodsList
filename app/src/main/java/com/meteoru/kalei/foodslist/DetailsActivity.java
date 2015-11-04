@@ -28,7 +28,7 @@ public class DetailsActivity extends AppCompatActivity {
         tvDescription = (TextView) findViewById(R.id.tvDescription);
         tvFriendlyTitle = (TextView) findViewById(R.id.tvFriendlyTitle);
         tvFriendlyText = (TextView) findViewById(R.id.tvFriendlyText);
-        tvTryItTitle = (TextView) findViewById(R.id.tvFriendlyTitle);
+        tvTryItTitle = (TextView) findViewById(R.id.tvTryItTitle);
         tvTryItText = (TextView) findViewById(R.id.tvTryItText);
         tvCautionTitle = (TextView) findViewById(R.id.tvCautionTitle);
         tvCautionText = (TextView) findViewById(R.id.tvCautionText);
@@ -39,6 +39,7 @@ public class DetailsActivity extends AppCompatActivity {
         tvDescription.setText(food.getDescription());
         tvFriendlyText.setText(food.getFriendly());
         tvTryItText.setText(food.getTryit());
+//        Log.d("TryIt", food.getTryit().toString());
         tvCautionText.setText(food.getCaution());
 
         if (food.getFriendly() == null || food.getFriendly().trim().isEmpty()){
