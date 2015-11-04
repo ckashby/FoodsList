@@ -16,6 +16,7 @@ import android.widget.ListView;
 import java.util.List;
 
 public class ProductMenuActivity extends AppCompatActivity {
+    private static final String TAG = ProductMenuActivity.class.getSimpleName();
     public static String CATEGORY_EXTRA = "category_extra";
     public static String ITEM_EXTRA = "item_extra";
     private String category;
@@ -30,9 +31,9 @@ public class ProductMenuActivity extends AppCompatActivity {
     public void onSaveInstanceState(Bundle outState) {
         outState.putString(CATEGORY_EXTRA, category);
         if (category == null){
-            Log.d("ProductMenuActivity", "Category is Null");
+            Log.d(TAG, "Category is Null");
         }
-        Log.d("ProductMenuActivity", "outState Function was called");
+        Log.d(TAG, "outState Function was called");
         super.onSaveInstanceState(outState);
     }
 
@@ -50,7 +51,7 @@ public class ProductMenuActivity extends AppCompatActivity {
             category = getIntent().getStringExtra(CATEGORY_EXTRA);
         } else {
             category = savedInstanceState.getString(CATEGORY_EXTRA);
-            Log.d("ProductMenuActivity", category.toString());
+            Log.d(TAG, category.toString());
         }
         dbHelper = new DbHelper(this);
         productList = dbHelper.getFoodsByCategory(category);
