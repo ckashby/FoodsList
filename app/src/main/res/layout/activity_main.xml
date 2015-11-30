@@ -18,9 +18,9 @@
 
     <ImageView
         android:id="@+id/ivBanner"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_sponsor_icn"
+        android:src="@drawable/ic_banner_no_ad"
         android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
