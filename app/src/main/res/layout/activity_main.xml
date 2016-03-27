@@ -20,7 +20,7 @@
         android:id="@+id/ivBanner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_banner_no_ad"
+        android:src="@drawable/ic_banner_prelief_left"
         android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

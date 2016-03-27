@@ -70,7 +70,8 @@ public class DbHelper extends SQLiteOpenHelper{
     public List<Food> getAllFood(){
         SQLiteDatabase db = this.getReadableDatabase();
         List<Food> allFoods = new ArrayList<Food>();
-        Cursor cursor = db.query("food", new String[]{"objectId", "name", "description", "category", "friendly", "try", "caution"}, null, null, null, null, null);
+        Cursor cursor = db.query("food", new String[]{"objectId", "name", "description",
+                "category", "friendly", "try", "caution"}, null, null, null, null, null);
         if (cursor.moveToFirst()) {
             do {
                 int objectIdIdx = cursor.getColumnIndex("objectId");
@@ -105,7 +106,8 @@ public class DbHelper extends SQLiteOpenHelper{
     public List<String> getMainMenu(){
         SQLiteDatabase db = this.getReadableDatabase();
         List<String> allFoods = new ArrayList<String>();
-        Cursor cursor = db.query(true, "food", new String[]{"category"}, null, null, null, null, "category", null);
+        Cursor cursor = db.query(true, "food", new String[]{"category"},
+                null, null, null, null, "category", null);
 
         if (cursor.moveToFirst()) {
             do {
