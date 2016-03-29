@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        foodslistkey {
+            keyAlias 'FoodsListKeyAlias'
+            keyPassword 'ni4ni4ni4'
+            storeFile file('FoodsListKey')
+            storePassword 'ni4ni4ni4'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
-
     defaultConfig {
         applicationId "com.meteoru.kalei.foodslist"
         minSdkVersion 16
