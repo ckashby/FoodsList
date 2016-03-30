@@ -20,7 +20,7 @@
         android:id="@+id/ivBanner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/prelief_and_icn_no_logo"
+        android:src="@drawable/prelief_and_icn_with_logo"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"/>
 
