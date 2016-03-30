@@ -13,6 +13,7 @@
     <string name="menu_text_about_food_list">About Our Food List</string>
     <string name="menu_text_beer_wine_spirits">Beer Wine and Spirits</string>
     <string name="menu_text_about_icn">About IC-Network.com</string>
+
     <string name="menu_text_about_our_sponsor">About Our Sponsor</string>
 
 
@@ -130,6 +131,13 @@ http://www.ic-network.com/videos/</p>
 
 
     <string name="title_activity_about_our_sponsor">About Our Sponsor</string>
+    <string name="about_our_sponsor_intro"></string>
+    <string name="about_our_sponsor_html">
+        <![CDATA[
+        <h3>What is Prelief</h3>
+        Prelief is a safe and effective over-the-counter product that removes the acid irritant from foods and beverages. Prelief helps prevent the discomfort of food-caused bladder irritation heartburn and other food acid problems before they happen. In addition, each Prelief tablet delivers about 6.4% of your calcium RDI, with uniquely absorbable calcium – far more available than from calcium carbonate. The calcium in Prelief is as readily available as the calcium in milk.
+        ]]>
+    </string>
 
 
 </resources>

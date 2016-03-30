@@ -22,6 +22,7 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/tvTitleAboutOurSponsor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/title_activity_about_our_sponsor"
@@ -29,22 +30,13 @@
                 android:textSize="20sp"/>
 
             <TextView
-                android:id="@+id/tvAboutFoodListIntro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:text="@string/about_icn_intro"
-                android:textColor="#000"
-                android:textSize="14sp"/>
-
-            <TextView
-                android:id="@+id/tvAboutIcnHtml"
+                android:id="@+id/tvAboutOurSponsorHtml"
                 android:autoLink="web"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvAboutFoodListIntro"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:text="@string/about_icn_html"
+                android:text="@string/about_our_sponsor_html"
                 android:textColor="#000"
                 android:textSize="14sp"/>
 

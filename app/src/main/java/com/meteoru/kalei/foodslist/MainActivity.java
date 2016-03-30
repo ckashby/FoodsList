@@ -147,6 +147,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_about_icn:
                 goAboutIcn();
                 return true;
+            case R.id.action_about_our_sponsor:
+                goAboutOurSponsor();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -169,6 +172,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void goAboutFoodList(){
         Intent i = new Intent(this, AboutFoodListActivity.class);
+        startActivity(i);
+    }
+
+    private void goAboutOurSponsor() {
+        Intent i = new Intent(this, AboutOurSponsor.class);
         startActivity(i);
     }
 }
