@@ -24,7 +24,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="About Our Sponsor"
+                android:text="@string/title_activity_about_our_sponsor"
                 android:textColor="#000"
                 android:textSize="20sp"/>
 

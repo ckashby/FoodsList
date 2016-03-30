@@ -13,6 +13,7 @@
     <string name="menu_text_about_food_list">About Our Food List</string>
     <string name="menu_text_beer_wine_spirits">Beer Wine and Spirits</string>
     <string name="menu_text_about_icn">About IC-Network.com</string>
+    <string name="menu_text_about_our_sponsor">About Our Sponsor</string>
 
 
     <string name="title_activity_about_icn">About IC-Network.com</string>
@@ -125,7 +126,10 @@ http://www.ic-network.com/videos/</p>
         medical care. We strongly encourage you to gather information from multiple sources, to explore pros and cons of various strategies and, most of all, have good discussions with your
         personal medical care team about your choices and plans.</string>
     <string name="wellness_couaching_html">http://www.icnsales.com/wellness-coaching/</string>
-    <string name="title_activity_about_our_sponsor">AboutOurSponsor</string>
+
+
+
+    <string name="title_activity_about_our_sponsor">About Our Sponsor</string>
 
 
 </resources>
