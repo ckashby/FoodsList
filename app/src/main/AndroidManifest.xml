@@ -88,7 +88,12 @@
         <activity
             android:name=".AboutOurSponsor"
             android:label="@string/title_activity_about_our_sponsor"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.meteoru.kalei.foodslist.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
